@@ -75,19 +75,21 @@
             Эффективные решения <br />
             для вашего бизнеса
           </h1>
-          <button type="button" class="button-hero">Заказать услугу</button>
+          <button type="button" class="button-hero" data-modal-open>
+            Заказать услугу
+          </button>
         </div>
       </section>
       <!-- MODAL -->
-      <div class="backdrop">
+      <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-          <div class="cross-item">
-            <a href="">
+          <a href="">
+            <div class="cross-item data-modal-close">
               <svg class="cross-svg">
                 <use href="./images/sprite.svg#cross"></use>
               </svg>
-            </a>
-          </div>
+            </div>
+          </a>
         </div>
       </div>
       <!--Текстові блоки -->
@@ -470,5 +472,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
