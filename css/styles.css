@@ -33,6 +33,9 @@ ul {
 .link {
   text-decoration: none;
 }
+img {
+  display: block;
+}
 
 .container {
   margin: 0 auto;
@@ -40,7 +43,7 @@ ul {
   padding-left: 15px;
   padding-right: 15px;
 }
-/* Секції */
+/* ---------------------Секції------------------ */
 .section-padding {
   padding-bottom: 200px;
   padding-top: 200px;
@@ -53,9 +56,17 @@ ul {
   padding-bottom: 94px;
   padding-top: 94px;
 }
-/* Header */
+/*------------------------ Header------------------ */
 header {
   border-bottom: 1px solid var(--border);
+}
+.header {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  color: var(--headers-text);
+  letter-spacing: 0.03em;
 }
 
 .logo {
@@ -169,7 +180,7 @@ header {
   color: var(--accent-text);
 }
 
-/* Hero */
+/* --------------------Hero------------------------------- */
 .hero {
   background-color: var(--background-accent);
   background-image: linear-gradient(
@@ -217,7 +228,52 @@ header {
   font-size: 16px;
   line-height: 1.8;
 }
-/* Features*/
+/* ----------------------MODAL--------------------------- */
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  min-width: 528px;
+  min-height: 581px;
+
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+.cross-item {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+}
+
+.cross-svg {
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+}
+/* -----------------------Features---------------------------*/
 .features-header {
   margin-bottom: 10px;
 
@@ -288,16 +344,8 @@ header {
 .features-item:last-child {
   margin-right: 0;
 }
-/* header */
-.header {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  color: var(--headers-text);
-  letter-spacing: 0.03em;
-}
-/* Occupation */
+
+/* ------------------------Occupation---------------------- */
 .occupation-header {
   margin-bottom: 50px;
 }
@@ -309,7 +357,28 @@ header {
 .occupation-item:not(:last-child) {
   margin-right: 30px;
 }
-/* Team */
+.occupation-item {
+  position: relative;
+}
+.occupation-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+
+  padding: 27px 82px;
+  text-align: center;
+
+  background: rgba(47, 48, 58, 0.8);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+/* --------------------Team-------------------- */
 .comand-header {
   margin-bottom: 50px;
 }
@@ -399,7 +468,7 @@ header {
   margin-right: 0px;
 }
 
-/* CLIENTS */
+/* --------------CLIENTS-------------------- */
 .clients-title {
   font-weight: 700;
   font-size: 36px;
