@@ -692,6 +692,9 @@ button:focus {
 .portfolio-item:hover .animation-text {
   transform: translatey(0);
 }
+.portfolio-link:focus .animation-text {
+  transform: translatey(0);
+}
 .portfolio-header {
   /* margin-left: 24px; */
   margin-bottom: 4px;
