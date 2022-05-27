@@ -199,7 +199,15 @@ header {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .active:hover::after {
-  transform: scaleX(1);
+  animation: lineScale 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@keyframes lineScale {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
 }
 
 /* --------------------Hero------------------------------- */
