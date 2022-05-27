@@ -236,6 +236,7 @@ header {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
+  transform: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .backdrop.is-hidden {
   opacity: 0;
@@ -362,14 +363,19 @@ header {
 .occupation-item {
   position: relative;
 }
+
 .occupation-text {
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
 
-  padding: 27px 82px;
+  height: 70px;
   text-align: center;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   background: rgba(47, 48, 58, 0.8);
   font-weight: 700;
