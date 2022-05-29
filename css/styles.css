@@ -125,12 +125,6 @@ header {
   fill: var(--accent-text);
 }
 
-.header-contacts-photo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .header-list > li:not(:last-child) {
   margin-right: 50px;
 }
@@ -311,7 +305,8 @@ header {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 }
-.cross-item {
+
+.backdrop-button {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -322,8 +317,8 @@ header {
   align-items: center;
   justify-content: center;
   display: flex;
+  background-color: transparent;
 }
-
 .cross-svg {
   align-items: center;
   justify-content: center;
